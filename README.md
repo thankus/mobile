@@ -64,4 +64,9 @@ npm run analyze
 
 git语句：
     克隆拉取特定分支  git clone -b 分支名 git地址
-    git加入忽略文件 
+    git add .
+    git commit -m '备注信息'
+    git push 推送
+
+
+虚拟列表优化参考 https://juejin.cn/post/6844903603094683656

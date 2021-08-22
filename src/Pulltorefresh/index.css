@@ -1,0 +1,122 @@
+
+ /* *{touch-action: none;} */
+ .wrap{
+    height: 100vh;
+}
+.header{
+    background: yellow;
+    width: 100%;
+}
+.list{
+    height: 667px;
+    
+}
+.refresh-demo{
+    /* touch-action: none; */
+}
+.PullToRefresh{
+    height: 1100px;
+}
+.content{
+    height: 1100px;
+    background: red;
+}
+
+
+
+.ptr--ptr{
+    pointer-events: none;
+    font-size: 0.85em;
+    font-weight: bold;
+    top: 0;
+    height: 0;
+    transition: height 0.3s, min-height 0.3s;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    align-content: stretch;
+}
+.ptr--box {
+    padding: 20px;
+    flex-basis: 100%;
+}
+.ptr--icon {
+    height: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    transition: transform .3s;
+}
+.weui-loading-dot {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 12px;
+}
+.weui-loading-dot i {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.weui-loading-dot i:nth-child(1) {
+    display: block;
+    left: 0;
+    background: #f25e51;
+}
+.weui-loading-dot.animated i:nth-child(1) {
+    animation: weui-animated_reddot 1.8s;
+    animation-iteration-count: infinite;
+}
+.weui-loading-dot i:nth-child(2) {
+    left: 24px;
+    background: #f6af39;
+}
+.weui-loading-dot.animated i:nth-child(2) {
+    animation: weui-animated_yellowdot 1.8s;
+    animation-iteration-count: infinite;
+}
+.weui-loading-dot i:nth-child(3) {
+    left: 48px;
+    background: #1ea5e8;
+}
+.weui-loading-dot i:nth-child(3) {
+    left: 48px;
+    background: #1ea5e8;
+}
+.weui-loading-dot.animated i:nth-child(3) {
+    animation: weui-animated_bluedot 1.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes weui-animated_reddot {
+     0% {left: 0px;}  
+     16.67% {    left: 24px;    z-index: 1;  }  
+     33.33% {    left: 48px;  }  
+     50% {    left: 24px;    z-index: 2;  } 
+     66.66% {    left: 24px;    z-index: 1;  }  
+     83.33% {    left: 24px;    z-index: 1;  }  
+     100% {    left: 0px;  }
+}
+
+@keyframes weui-animated_yellowdot {  
+    0% {    left: 24px;    z-index: 1;  }  
+    16.67% {    left: 24px;    z-index: 1;  }  
+    33.33% {    left: 0px;  }  
+    50% {    left: 24px;    z-index: 1;  }  
+    66.66% {    left: 48px;  }  
+    83.33% {    left: 24px;    z-index: 2;  }  
+    100% {    left: 24px;    z-index: 2;  }
+}
+@keyframes weui-animated_bluedot {  
+    0% {    left: 48px;  }  
+    16.66% {    left: 24px;    z-index: 2;  }  
+    33.33% {    left: 24px;    z-index: 1;  }  
+    50% {    left: 24px;    z-index: 1;  }  
+    66.66% {    left: 0px;  }  
+    83.33% {    left: 24px;    z-index: 1;  }  
+    100% {    left: 48px;  }
+}
